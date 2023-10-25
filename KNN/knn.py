@@ -19,7 +19,7 @@ class KNN:
     def predict(self,X):
         #prediction
         prediction=[self._predict(x) for x in X]
-        return prediction
+        return np.array(prediction)
 
     def _predict(self, x):
         #compute distance
